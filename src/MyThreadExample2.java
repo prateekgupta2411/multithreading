@@ -1,6 +1,6 @@
-public class MyThread1 extends Thread {
+public class MyThreadExample2 extends Thread {
 
-    MyThread1(String name) {
+    MyThreadExample2(String name) {
         super(name);
     }
 
@@ -21,9 +21,9 @@ public class MyThread1 extends Thread {
     }
 
     public static void main(String[] args) {
-        MyThread1 l = new MyThread1("Low Priority Thread");
-        MyThread1 m = new MyThread1("Medium Priority Thread");
-        MyThread1 h = new MyThread1("High Priority Thread");
+        MyThreadExample2 l = new MyThreadExample2("Low Priority Thread");
+        MyThreadExample2 m = new MyThreadExample2("Medium Priority Thread");
+        MyThreadExample2 h = new MyThreadExample2("High Priority Thread");
         l.setPriority(Thread.MIN_PRIORITY);
         m.setPriority(Thread.NORM_PRIORITY);
         h.setPriority(Thread.MAX_PRIORITY);
